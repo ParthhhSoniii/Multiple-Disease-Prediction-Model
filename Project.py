@@ -10,10 +10,10 @@ import pandas as pd
 # python -m streamlit run .\Multiple_Disease_Detection\Project.py
 
 
-loaded_model = pickle.load(open(r'C:\Users\jayeshsoni\OneDrive\Desktop\Projects\Multiple_Disease_Detection\Multiple_Disease_Detection.sav','rb'))
-loaded_symptoms_list = pickle.load(open(r'C:\Users\jayeshsoni\OneDrive\Desktop\Projects\Multiple_Disease_Detection\symptoms_list.pkl','rb'))
-loaded_Disease_list = pickle.load(open(r'C:\Users\jayeshsoni\OneDrive\Desktop\Projects\Multiple_Disease_Detection\Disease_list.pkl','rb'))
-loaded_le = pickle.load(open(r'C:\Users\jayeshsoni\OneDrive\Desktop\Projects\Multiple_Disease_Detection\LabelEncoder_for_ML_Model.pkl','rb'))
+loaded_model = pickle.load(open('Multiple_Disease_Detection.sav', 'rb'))
+loaded_symptoms_list = pickle.load(open('symptoms_list.pkl', 'rb'))
+loaded_Disease_list = pickle.load(open('Disease_list.pkl', 'rb'))
+loaded_le = pickle.load(open('LabelEncoder_for_ML_Model.pkl', 'rb'))
 le = LabelEncoder()
 
 loaded_Disease_list = list((loaded_Disease_list).unique())
