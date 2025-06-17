@@ -43,7 +43,6 @@ with st.sidebar:
     st.sidebar.title('🔍 Navigation Bar')
     selected = option_menu("",
                            ['📝 Home','🧬 Detect Multiple Disease','🧠 Tumor Detection'],
-                           icons = ['none','DNA','x-ray'],
                            default_index=0)
 
 
