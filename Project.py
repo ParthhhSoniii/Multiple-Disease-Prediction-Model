@@ -4,6 +4,7 @@ from streamlit_option_menu import option_menu
 from sklearn.preprocessing import LabelEncoder
 import numpy as np
 import pandas as pd
+import seaborn
 
 
 # python -m streamlit run .\Multiple_Disease_Detection\Project.py
@@ -100,3 +101,4 @@ if selected == '🧠 Tumor Detection':
 
 
     
+
